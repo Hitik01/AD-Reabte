@@ -73,10 +73,10 @@
 	content: "";
 	top: 0px;
 	height: 100%;
-	right: -50%;
+	right: -55%;
 	width: 0%;
 	background-color: #000000;
-	transform: skew(50deg);
+	transform: skew(42deg);
 	transition-duration: 1s;
 	z-index: -1;
   }
@@ -121,11 +121,11 @@
   }
 
   .intro-section .intro-content .tagline .change-container{
-	  position: relative;
+	position: relative;
 	display: inline-block;
 	width: 560px;
 	margin-bottom: 55px;
-	  margin-top: 30px;
+	margin-top: 30px;
   }
 
   .intro-section .intro-content .changing {
@@ -227,6 +227,14 @@
 	  position: relative;
 	  z-index: 9;
   }
+  /* ====================
+	About US
+  =======================*/
+.aboutUs{
+      height: 100px;
+	  width: 100px;
+	  text-align: justify;
+}
 
   /* ====================
 	Responsive Section
