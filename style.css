@@ -60,10 +60,13 @@
   /* ====================
 	Intro Section
   =======================*/
+ .advertisement{
+	font-family: 'Dancing Script', cursive;
+font-family: 'Satisfy', cursive;
+ }
   .intro-section {
 	height: 100vh;
 	position: relative;
-	background: rgba(0, 0, 0, 0.9);
   }
   .intro-section:hover{
 	color: #faf8f8;
@@ -78,11 +81,12 @@
 	background-color: #000000;
 	transform: skew(42deg);
 	transition-duration: 1s;
-	z-index: -1;
+	z-index: 1;
   }
   .intro-section:hover:before{
 	  width: 100%;
 	  height: 100%;
+	  background-color: black;
   }
   .intro-section .intro-content {
 	display: flex;
@@ -94,6 +98,7 @@
 	height: 100%;
 	left: 0;
 	top: 0;
+	background-color: #696969;
 
   }
   .intro-section .intro-content h1 {
@@ -102,6 +107,7 @@
 	letter-spacing: -1px;
 	text-transform: uppercase;
 	margin-top: 80px;
+	z-index: 1;
   }
 
   .intro-section .intro-content h6{
@@ -109,11 +115,13 @@
 	color: #ffffff;
 	font-size: 2.5rem;
 	font-weight: 300;
+	z-index: 1;
   }
 
   .intro-section .intro-content p {
 	margin-top: 40px;
 	color: #ffffff;
+	z-index: 1;
   }
 
   .intro-content .tagline {
@@ -263,6 +271,38 @@
 	font-size: 20px;
 	padding-bottom: 1%;
 }
+/*======= grid image======== */
+.rvw{
+	color: #eeeeee;
+	text-align: center;
+}
+.review{
+	background-color: #000;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+	margin-left: 10px;
+	padding-left: 70px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+	flex: 50%;
+	max-width: 100%;
+	padding: 30px;
+  }
+  
+  .column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 80%;
+	padding-bottom: 10%;
+  }
+  
+  
+  
  /* ====================
 	Footer
   =======================*/
@@ -378,6 +418,21 @@
 	  margin-top: 10px;
 	}
 
+  }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+	.column {
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.column {
+	  flex: 100%;
+	  max-width: 100%;
+	}
   }
   @media screen and (max-width: 700px) {
 	.footer > p {
