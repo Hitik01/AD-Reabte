@@ -227,6 +227,7 @@
 	  position: relative;
 	  z-index: 9;
   }
+
   /* ====================
 	About US
   =======================*/
@@ -262,6 +263,27 @@
 	font-size: 20px;
 	padding-bottom: 1%;
 }
+ /* ====================
+	Footer
+  =======================*/
+
+  .footer {
+	background-color: black;
+	height: 20px;
+	justify-items: center;
+	line-height: 20px;
+}
+
+.footer > p {
+	color: #ffffff;
+	font-size: 14px;
+	text-align: center;
+}
+
+
+
+
+
 /* ------------------------------  Css for different Screen sizes   ----------------------------------------------------------------- */
 
 @media screen and (max-width: 700px) {
@@ -313,7 +335,8 @@
 	header .navigation .menu-list li a {
 	  display: block;
 	  padding: 20px;
-	  transition: color 1s ease, padding 1s ease, background-color 1s ease;
+	  transition: color 1s ease, padding 1s ease;
+	  background-color: 1s ease;
 
 	}
 
@@ -324,7 +347,7 @@
 	}
 
 
-	header .navigation .humbarger{
+	header .navigation .hamburger{
 	  display: block;
 	}
 
@@ -356,3 +379,8 @@
 	}
 
   }
+  @media screen and (max-width: 700px) {
+	.footer > p {
+		font-size: 11px;
+	}
+}
