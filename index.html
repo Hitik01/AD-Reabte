@@ -4,19 +4,20 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="index,js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<a href="https://icons8.com/icon/Xy10Jcu1L2Su/instagram"></a>
 	<title>Ad-Rebate</title>
      </head>
      <body>
 	 <header>
-		<script language="JavaScript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-		<script src="index.js" type="javascript"></script>
 		<div class="navigation">
 
 			<!-- Logo -->
@@ -84,14 +85,14 @@
 		</div>
 	 </div>
 	</div>
-	<!----registeration-->
-	<h3>Register Yourself as a Firm</h3>
-	<div class="registration">
+	<!----Registration-->
+	<div class="registration" style= "background-color: black;">
+		<h3 class="rH">Register yourself as a Firm</h3>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
 				<div class="panel panel-danger">
 					<div class="panel-body">
-						<form id="reused_form">
+						<form id="reused_form" method="post" action="handler.php" >
 							<div class="form-group">
 								<label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
 								<input type="text" name="name" class="form-control" placeholder="Enter Name">
@@ -101,21 +102,25 @@
 								<input type="email" name="email" class="form-control" placeholder="Enter Email">
 							</div>
 							<div class="form-group">
+								<label><i class="fa fa-phone" aria-hidden="true"></i> Phone No.</label>
+								<input type="text" name="mobile" class="form-control" placeholder="Enter Phone no">
+							</div>
+							<div class="form-group">
 								<label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
 								<textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
 							</div>
 							<div class="form-group">
-								<button class="btn btn-raised btn-block btn-danger">Post &rarr;</button>
+								<button class="btn btn-raised btn-block btn-dark">Post &rarr;</button>
 							</div>
 						</form>
 						<div id="error_message" style="width:100%; height:100%; display:none; ">
 							<h4>
 								Error
 							</h4>
-							Sorry there was an error sending your form. 
+							Sorry there was an error sending your form.
 						</div>
 						<div id="success_message" style="width:100%; height:100%; display:none; ">
-<h2>Success! Your Message was Sent Successfully.</h2>
+                        <h2>Success! Your Message was Sent Successfully.</h2>
 </div>
 					</div>
 				</div>
