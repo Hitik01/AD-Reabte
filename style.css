@@ -276,6 +276,8 @@
 .rvw{
 	color: #eeeeee;
 	text-align: center;
+
+	padding-bottom: 80px;
 }
 .review{
 	background-color: #000;
@@ -350,6 +352,24 @@ registration form
   .btn-warning{
 	background-color: transparent;
 	border-color: #bdc3c7;
+  }
+  /* ====================
+	   Projects
+  =======================*/
+  .project{
+	  background-color: #000000;
+  }
+  .paraJ{
+       margin:10%;
+	   color: #ffffff;
+	   font-size: 50px;
+  }
+  .projectImages{
+	  display: flex;
+	  flex: 1;
+	  justify-content: center;
+	  align-content: center;
+	  padding:40px;
   }
  /* ====================
 	Footer
